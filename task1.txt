@@ -1,0 +1,29 @@
+********* obtained local ip *******
+command used "ip addr"
+ip address : 192.168.43.157/24
+
+*********  SCAN RESULTS ***************
+
+karthik@karthik~$ sudo nmap -sS 192.168.43.157
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-05-26 20:50 IST
+Nmap scan report for 192.168.43.157
+Host is up (0.000024s latency).
+Not shown: 997 closed ports
+PORT    STATE SERVICE
+80/tcp  open  http
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Nmap done: 1 IP address (1 host up) scanned in 0.36 seconds
+
+*******   These are the potential risks for the obtained open ports *****************
+
+
+Open ports like 80/TCP (HTTP), 139/TCP (NetBIOS-SSN), and 445/TCP (Microsoft-DS) can pose significant security risks, especially when exposed to the internet. Attackers can exploit these ports to gain unauthorized access to systems, steal data, or launch malicious attacks. 
+Here's a breakdown of the potential risks:
+80/TCP (HTTP):
+While not inherently dangerous, open port 80 (HTTP) can be a vulnerability if not properly configured. Attackers can exploit misconfigured web servers or websites hosted on that port to gain access to sensitive data or launch attacks. 
+139/TCP (NetBIOS-SSN):
+This port is used for NetBIOS-based file sharing and can be a target for SMB attacks. An open port 139 can allow attackers to gain access to file shares, execute code on the system, or launch attacks on other systems within the network. 
+445/TCP (Microsoft-DS):
+This port is used for Server Message Block (SMB) communication. SMB vulnerabilities have been exploited in past cyberattacks like WannaCry and NotPetya, highlighting the risks of leaving this port open. Attackers can exploit vulnerabilities in SMB to spread malware, execute malicious code, and gain control of systems. 
