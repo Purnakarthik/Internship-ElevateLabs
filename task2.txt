@@ -1,0 +1,54 @@
+Task 2: Phishing Email Analysis 
+
+**************** Email Summary ***************
+Subject: Microsoft account password change
+
+Sender: support@msupdate.net
+
+Recipient: ethan@hooksecurity.co
+
+Time: 4:09 PM
+
+*************** Phishing Indicators Identified *********************
+Spoofed Sender Address :
+
+The email claims to be from Microsoft but is sent from support@msupdate.net, which is not a legitimate Microsoft domain.
+
+Suspicious Links :
+
+The message contains multiple action links (e.g., reset password, review info) which could lead to fake login pages. Legitimate Microsoft emails usually include verified links under the microsoft.com domain.
+
+Urgency and Threat Language :
+
+The message says “If this wasn't you, your account has been compromised,” creating a sense of urgency and fear, a common tactic in phishing attempts.
+
+Lack of Personalization :
+
+No username, account ID, or personal reference is used. Generic greetings suggest the email was sent in bulk.
+
+Unverified Design Elements :
+
+While the formatting looks professional, there’s no official branding, digital signature, or Microsoft security footer, which are typically present in real Microsoft emails.
+
+No Contact Verification :
+
+The email lacks any verifiable contact information or official Microsoft support links.
+
+**************** Tools & Techniques Used *******************************
+->  Manual email inspection
+
+->  Link hover analysis (recommended for live emails)
+
+->  Basic domain analysis of sender email
+
+**************** Conclusion *************************************
+This email is very likely a phishing attempt. It impersonates Microsoft, uses a spoofed sender domain, creates urgency, and encourages the user to click on potentially harmful links.
+
+***************** Recommendations ***********************
+->  Do not click on any links or download attachments from suspicious emails.
+
+->  Verify sender domains carefully. Official emails from Microsoft will come from @microsoft.com.
+
+->  Report phishing emails to your email provider or internal security team.
+
+->  Use email header analyzers for deeper inspection if headers are available.
