@@ -16,6 +16,8 @@ sudo nmap -sS 192.168.43.157
 
 ![nmap_scan_result](https://github.com/user-attachments/assets/4dc1a249-ca1d-4681-a4e7-b79c232c0fcd)
 
+---
+
 ## Task 2: Phishing Email Analysis
 
 ### Sample Email :-
@@ -59,13 +61,15 @@ Recipient: `ethan@hooksecurity.co`
 ### Conclusion
 This email is **highly suspicious and likely a phishing attempt**. It spoofs Microsoft's identity, uses social engineering, and contains unverified links. The user should not click any links and report this email as phishing.
 
-# 🔍 Task 3: Perform a Basic Vulnerability Scan on Your PC.
+---
+
+#  Task 3: Perform a Basic Vulnerability Scan on Your PC.
 
 As part of my cybersecurity internship, I conducted a vulnerability scan on my local machine using **OpenVAS** (Greenbone Community Edition).
 
 ---
 
-## 🧰 Tools & Environment
+##  Tools & Environment
 
 - **Operating System**: Ubuntu 22.04 LTS
 - **Scanner**: OpenVAS (Greenbone Vulnerability Management)
@@ -74,7 +78,7 @@ As part of my cybersecurity internship, I conducted a vulnerability scan on my l
 
 ---
 
-## ⚙️ Steps Followed
+## Steps Followed
 
 1. Installed OpenVAS using `sudo apt install openvas` and initialized with `gvm-setup`.
 2. Configured target (localhost) and created a new task in GVM dashboard.
@@ -82,27 +86,28 @@ As part of my cybersecurity internship, I conducted a vulnerability scan on my l
 4. Waited ~1 hour for the scan to complete.
 5. Analyzed the report for vulnerabilities.
 6. Documented top critical vulnerabilities and provided mitigation suggestions.
+---
 
-# 🔥 Task 4: Setup and Use a Firewall on Windows/Linux
+#  Task 4: Setup and Use a Firewall on Windows/Linux
 
 As part of my cybersecurity internship, I completed a hands-on task configuring a firewall on Linux using **UFW (Uncomplicated Firewall)**.
 
 ---
 
-## 🎯 Objective
+##  Objective
 
 To understand how firewall rules manage network traffic and to demonstrate rule creation, testing, and deletion.
 
 ---
 
-## 💻 Environment
+##  Environment
 
 - **OS**: Ubuntu 22.04 LTS  
 - **Tool**: UFW (Uncomplicated Firewall)
 
 ---
 
-## 🧪 Steps Performed
+##  Steps Performed
 
 1. **Checked UFW status** to ensure the firewall is active.
 2. **Blocked port 23 (Telnet)** to prevent insecure remote access.
@@ -110,6 +115,196 @@ To understand how firewall rules manage network traffic and to demonstrate rule 
 4. **Allowed SSH (port 22)** to ensure remote admin access is maintained.
 5. **Removed the test block rule** to restore the original configuration.
 6. Captured terminal screenshots of commands and results.
+---
+
+#  Task 5: Capture and Analyze Network Traffic Using Wireshark.
+
+This task was completed as part of my Cybersecurity Internship to explore packet capturing, protocol filtering, and basic network analysis using Wireshark.
+
+---
+
+##  Tools & Setup
+
+- **OS**: Ubuntu 22.04 LTS  
+- **Tool Used**: Wireshark  
+- **Network Interface**: wlo1 (Wi-Fi)  
+
+---
+
+##  Steps Performed
+
+1. Installed Wireshark using `sudo apt install wireshark`.
+2. Ran Wireshark and selected the active Wi-Fi interface (`wlo1`).
+3. Started packet capture.
+4. Browsed a few websites and ran `ping google.com` in terminal to generate traffic.
+5. Stopped capture after ~1 minute.
+6. Applied filters (`dns`, `http`, `icmp`) to analyze packets by protocol.
+
+---
+
+##  Protocols Observed
+
+- **DNS**: Domain resolution queries.
+- **HTTP**: Web requests and responses in plaintext.
+- **ICMP**: Echo requests and replies from ping command.
+
+---
+
+##  Key Concepts
+
+- Packet and protocol analysis
+- Live capture with Wireshark
+- Filtering network traffic by protocol
+- Role of DNS, HTTP, ICMP in everyday usage
+
+---
+
+
+#  Task 6: Create a Strong Password and Evaluate Its Strength.
+
+This task involved testing the strength of different passwords and learning how password complexity affects overall security.
+
+---
+
+##  System Info
+
+- **Operating System**: Ubuntu 22.04 LTS  
+- **Tool Used**: [passwordmeter.com](https://www.passwordmeter.com)
+
+---
+
+##  Steps Followed
+
+1. Created 5 passwords with varying complexity.
+2. Tested each on passwordmeter.com.
+3. Recorded strength score and feedback.
+4. Noted best practices for creating strong passwords.
+5. Researched common password attacks and defense mechanisms.
+
+---
+
+##  Summary of Results
+
+| Password             | Score  | Strength         |
+|----------------------|--------|------------------|
+| Password123          | 30%    | Weak             |
+| K@rTh!k@2024         | 80%    | Strong           |
+| tadiPurnaK@rthik#57  | 95%    | Very Strong      |
+| 12345678             | 10%    | Extremely Weak   |
+| Ubuntu_Rocks@22      | 85%    | Strong           |
+
+---
+
+##  Key Concepts Learned
+
+- Password complexity and entropy
+- Brute force and dictionary attacks
+- Benefits of passphrases
+- Importance of multi-factor authentication (MFA)
+
+---
+#  Task 7: Identify and Remove Suspicious Browser Extensions
+
+This task aimed to raise awareness about browser security by auditing installed extensions and identifying potentially risky add-ons.
+
+---
+
+## System Details
+
+- **Operating System**: Ubuntu 22.04 LTS  
+- **Browser Used**: Google Chrome  
+- **Extension Page Used**: `chrome://extensions/`
+
+---
+
+##  Steps Performed
+
+1. Opened the Chrome Extensions page.
+2. Reviewed all installed extensions.
+3. Checked each extension's:
+   - Permissions
+   - Reviews and user ratings
+   - Publisher identity
+4. Removed unnecessary or suspicious ones.
+5. Restarted the browser to check performance.
+
+---
+
+##  Extensions Removed
+
+| Extension Name         | Reason for Removal                                |
+|------------------------|----------------------------------------------------|
+| Video Downloader Pro   | Unknown publisher, high permissions, poor reviews  |
+| Screen Capture Tool    | Rarely used, lacked trust indicators               |
+
+---
+
+## Extensions Kept
+
+| Extension Name     | Reason |
+|--------------------|--------|
+| Grammarly          | Trusted, widely used, verified developer |
+| Dark Reader        | Open-source, useful, minimal permissions |
+| Momentum           | Well-rated, productivity extension        |
+
+---
+
+##  Key Takeaways
+
+- Extensions with high permissions and unknown publishers can be dangerous.
+- Always check reviews and permissions before installing.
+- Remove unused extensions to reduce attack surface.
+- Keep browser updated and extensions minimal.
+
+---
+# Task 8: Working and Understanding the VPN
+
+This task involved installing and using a VPN on Ubuntu 22.04 to understand how VPNs help protect user privacy, encrypt traffic, and mask online identity.
+
+---
+
+##  Environment
+
+- **OS**: Ubuntu 22.04 LTS  
+- **VPN Service**: ProtonVPN (Free Tier)  
+- **Tool Used**: ProtonVPN CLI
+
+---
+
+##  Steps Followed
+
+1. Installed ProtonVPN CLI with `sudo apt install protonvpn-cli`.
+2. Logged in and connected to a free VPN server.
+3. Verified IP change via `whatismyipaddress.com`.
+4. Browsed websites to confirm traffic redirection and encryption.
+5. Disconnected and compared performance before/after.
+
+---
+
+##  Results
+
+| Test                            | Observation                          |
+|----------------------------------|--------------------------------------|
+| VPN Connection                   | Successful                           |
+| IP Changed                       | Yes (new server location shown)      |
+| Traffic Encrypted                | Yes (via HTTPS and VPN tunnel)       |
+| Browsing Speed                   | Slightly slower but stable           |
+| VPN Protocol Used                | OpenVPN                              |
+
+---
+
+## Key Concepts Learned
+
+- VPN encrypts internet traffic and hides IP addresses.
+- VPN helps protect against surveillance and public Wi-Fi attacks.
+- Common protocols: OpenVPN, WireGuard, IKEv2.
+- VPN ≠ complete anonymity — still need safe practices.
+
+---
+
+
+
+
 
 
 
