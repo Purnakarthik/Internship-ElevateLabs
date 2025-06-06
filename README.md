@@ -59,6 +59,61 @@ Recipient: `ethan@hooksecurity.co`
 ### Conclusion
 This email is **highly suspicious and likely a phishing attempt**. It spoofs Microsoft's identity, uses social engineering, and contains unverified links. The user should not click any links and report this email as phishing.
 
+# 🔍 Task 3: Perform a Basic Vulnerability Scan on Your PC.
+
+As part of my cybersecurity internship, I conducted a vulnerability scan on my local machine using **OpenVAS** (Greenbone Community Edition).
+
+---
+
+## 🧰 Tools & Environment
+
+- **Operating System**: Ubuntu 22.04 LTS
+- **Scanner**: OpenVAS (Greenbone Vulnerability Management)
+- **Scan Type**: Full and Fast Scan
+- **Target**: 192.168.43.157 (Localhost)
+
+---
+
+## ⚙️ Steps Followed
+
+1. Installed OpenVAS using `sudo apt install openvas` and initialized with `gvm-setup`.
+2. Configured target (localhost) and created a new task in GVM dashboard.
+3. Executed a **Full and Fast Scan**.
+4. Waited ~1 hour for the scan to complete.
+5. Analyzed the report for vulnerabilities.
+6. Documented top critical vulnerabilities and provided mitigation suggestions.
+
+# 🔥 Task 4: Setup and Use a Firewall on Windows/Linux
+
+As part of my cybersecurity internship, I completed a hands-on task configuring a firewall on Linux using **UFW (Uncomplicated Firewall)**.
+
+---
+
+## 🎯 Objective
+
+To understand how firewall rules manage network traffic and to demonstrate rule creation, testing, and deletion.
+
+---
+
+## 💻 Environment
+
+- **OS**: Ubuntu 22.04 LTS  
+- **Tool**: UFW (Uncomplicated Firewall)
+
+---
+
+## 🧪 Steps Performed
+
+1. **Checked UFW status** to ensure the firewall is active.
+2. **Blocked port 23 (Telnet)** to prevent insecure remote access.
+3. **Tested the block** using `telnet` (or `nc` to simulate).
+4. **Allowed SSH (port 22)** to ensure remote admin access is maintained.
+5. **Removed the test block rule** to restore the original configuration.
+6. Captured terminal screenshots of commands and results.
+
+
+
+
 
 
 
