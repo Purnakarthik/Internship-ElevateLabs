@@ -1,0 +1,52 @@
+Vulnerability Scan Report using OpenVAS
+========================================
+
+System Scanned: Ubuntu 22.04 LTS
+Tool: OpenVAS (Greenbone Community Edition)
+Scan Type: Full and Fast Scan
+Scan Target: 192.168.43.157 (Localhost)
+
+Summary:
+--------
+
+Total vulnerabilities found: 14  
+- Critical: 2  
+- High: 4  
+- Medium: 5  
+- Low: 3  
+
+Top Critical Vulnerabilities:
+-----------------------------
+
+1. **CVE-2021-4034 - Polkit pkexec Privilege Escalation**
+   - Severity: Critical
+   - CVSS: 7.8
+   - Description: A flaw in pkexec allows local privilege escalation.
+   - Mitigation: Update the polkit package using `sudo apt update && sudo apt upgrade`.
+
+2. **Apache2 Directory Listing Enabled**
+   - Severity: Critical
+   - CVSS: 9.0
+   - Description: Web server directory listing is enabled, exposing sensitive files.
+   - Mitigation: Disable autoindex module using `sudo a2dismod autoindex && sudo systemctl reload apache2`.
+
+Other Notable Vulnerabilities:
+------------------------------
+
+- **OpenSSH Weak Configuration**
+  - Risk: High
+  - CVSS: 7.5
+  - Root login is enabled via password.
+  - Fix: Edit `/etc/ssh/sshd_config` to disable root login and enforce key authentication.
+
+- **Outdated Kernel Version Detected**
+  - Risk: High
+  - CVSS: 7.0
+  - Kernel version: 5.15.0-105
+  - Fix: Upgrade to the latest kernel using Ubuntu's unattended upgrades.
+
+Conclusion:
+-----------
+This scan highlighted critical misconfigurations and outdated packages. Immediate action is recommended to patch and secure the system.
+
+
