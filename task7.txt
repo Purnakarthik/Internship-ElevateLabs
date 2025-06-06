@@ -1,0 +1,51 @@
+Browser Extensions Security Audit Report
+=========================================
+
+System: Ubuntu 22.04 LTS  
+Browser: Google Chrome 
+Tool: Chrome Extensions Manager (chrome://extensions/)
+
+Objective:
+----------
+To review, analyze, and remove any unnecessary or suspicious browser extensions to improve security.
+
+Extensions Initially Installed:
+-------------------------------
+
+1. **Grammarly for Chrome**
+   - Permissions: Access to all website content
+   - Review: Legitimate, useful tool — kept
+
+2. **Dark Reader**
+   - Permissions: Access to all sites
+   - Review: Open-source, safe — kept
+
+3. **Video Downloader Pro**
+   - Permissions: Read/change all your data on visited websites
+   - Review: No verified developer, suspicious reviews — **removed**
+
+4. **Momentum**
+   - Permissions: New tab access
+   - Review: Popular productivity tool — kept
+
+5. **Screen Capture Tool**
+   - Permissions: Capture screen, access tabs
+   - Review: Rarely used, unknown source — **removed**
+
+Extensions Removed:
+-------------------
+- Video Downloader Pro
+- Screen Capture Tool
+
+Reasons for Removal:
+---------------------
+- Unverified publishers
+- Excessive permissions
+- Negative user reviews
+- No longer needed
+
+Conclusion:
+-----------
+Regularly auditing browser extensions helps reduce the risk of malware, data leaks, and performance issues. Only install extensions from trusted developers and review permissions during installation.
+
+

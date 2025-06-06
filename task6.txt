@@ -1,0 +1,53 @@
+Password Strength Analysis Report
+==================================
+
+System: Ubuntu 22.04 LTS  
+Tool Used: https://www.passwordmeter.com/
+
+Objective:
+----------
+To create multiple passwords, test their strength, and learn best practices for secure password creation.
+
+Passwords Tested and Results:
+-----------------------------
+
+1. Password: `Password123`
+   - Score: 30%
+   - Feedback: Too common, lacks special characters.
+
+2. Password: `K@rTh!k@2024`
+   - Score: 80%
+   - Feedback: Strong password with uppercase, lowercase, numbers, and symbols.
+
+3. Password: `tadiPurnaK@rthik#57`
+   - Score: 95%
+   - Feedback: Very strong — long length, mixed case, symbols, and numbers.
+
+4. Password: `12345678`
+   - Score: 10%
+   - Feedback: Extremely weak — predictable and widely used.
+
+5. Password: `Ubuntu_Rocks@22`
+   - Score: 85%
+   - Feedback: Good complexity and length.
+
+Best Practices Learned:
+------------------------
+
+- Use a combination of uppercase, lowercase, numbers, and symbols.
+- Passwords should be at least 12 characters long.
+- Avoid using personal information or common patterns (like "123456").
+- Passphrases (random or memorable word combinations) are both strong and user-friendly.
+
+Common Password Attacks:
+-------------------------
+
+- **Brute Force Attack**: Tries all possible combinations.
+- **Dictionary Attack**: Tries common words and passwords.
+- **Credential Stuffing**: Uses leaked usernames and passwords from data breaches.
+
+Conclusion:
+-----------
+Longer, more complex passwords significantly increase resistance to attacks. Using a password manager and enabling multi-factor authentication (MFA) are recommended for improved security.
+
+

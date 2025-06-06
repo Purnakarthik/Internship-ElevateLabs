@@ -1,0 +1,71 @@
+VPN Setup and Usage Report
+===========================
+
+System: Ubuntu 22.04 LTS  
+VPN Used: ProtonVPN (Free Tier)  
+Tool: ProtonVPN Linux CLI
+
+Objective:
+----------
+To understand how a VPN works, how it encrypts internet traffic, and its impact on privacy and performance.
+
+Steps Followed:
+---------------
+
+1. **Signed up** for a free ProtonVPN account at https://protonvpn.com.
+2. **Installed VPN client** on Ubuntu using official guide:
+
+      sudo apt install -y protonvpn-cli
+
+3. **Logged in** using CLI:
+      protonvpn-cli login yourusername
+
+
+4. **Connected** to a VPN server:
+      protonvpn-cli connect
+
+
+Chose a free server closest to my region.
+
+5. **Verified IP address change**:
+- Visited https://whatismyipaddress.com
+- IP address showed new location (Germany-based server)
+
+6. **Tested traffic encryption**:
+- Browsed HTTPS websites like https://example.com
+- All traffic routed securely via VPN tunnel.
+
+7. **Disconnected VPN**:
+      protonvpn-cli disconnect
+
+
+
+8. **Compared browsing speed**:
+- Slightly slower when VPN was active, but functional.
+
+Key Concepts Learned:
+----------------------
+
+- VPN (Virtual Private Network) masks your IP and encrypts data.
+- Tunneling protocols like OpenVPN and WireGuard secure communication.
+- A VPN helps protect against tracking, surveillance, and ISP monitoring.
+
+VPN Benefits:
+-------------
+- Encrypts data in transit.
+- Hides real IP address.
+- Bypasses geo-restrictions and censorship.
+- Enhances public Wi-Fi safety.
+
+VPN Limitations:
+----------------
+- Slight reduction in speed.
+- Free plans may have limited servers.
+- VPNs don’t prevent phishing or malware directly.
+- Does not guarantee 100% anonymity if misused.
+
+Conclusion:
+-----------
+This task gave hands-on experience with setting up a VPN on Linux. It helped reinforce key cybersecurity principles like encryption, privacy, and network anonymity.
+
+

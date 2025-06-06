@@ -1,0 +1,44 @@
+Wireshark Packet Capture Report
+===============================
+
+System: Ubuntu 22.04 LTS  
+Tool: Wireshark  
+Interface Used: wlo1 (Wi-Fi)
+
+Capture Summary:
+----------------
+- Duration: ~1 minute
+- Traffic Generated: Browsed gmail.com and pinged google.com
+- File Saved: capture_output.pcap
+
+Protocols Identified:
+----------------------
+
+1. **DNS (Domain Name System)**
+   - Function: Resolves domain names (e.g., gmail.com) to IP addresses.
+   - Observation: Multiple DNS query and response packets visible.
+
+2. **HTTP (Hypertext Transfer Protocol)**
+   - Function: Communication between browser and web server.
+   - Observation: Detected GET requests and HTTP 200 OK responses.
+
+3. **ICMP (Internet Control Message Protocol)**
+   - Function: Used by `ping` to test network connectivity.
+   - Observation: Echo (ping) requests and replies between local and remote hosts.
+
+Filtering Example Commands Used:
+-------------------------------
+- `dns` — to filter only DNS packets.
+- `http` — to filter only HTTP packets.
+- `icmp` — to filter ICMP traffic from the ping command.
+
+Notes:
+------
+- Some HTTPS (TLS) packets were captured but content was encrypted.
+- IP and MAC addresses were partially anonymized in screenshots for privacy.
+
+Conclusion:
+-----------
+This task provided hands-on experience using Wireshark to observe real-time network traffic. Multiple protocols were identified and analyzed using filters, enhancing understanding of how basic networking works under the hood.
+
+
